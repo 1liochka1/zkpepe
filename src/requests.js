@@ -17,6 +17,7 @@ const HEADERS =  {
 async function getAmount(address){
     try {
         const response = await axios.get(`https://www.zksyncpepe.com/resources/amounts/${address.toLowerCase()}.json`, {headers: HEADERS});
+        await new Promise(resolve => setTimeout(resolve, 3000));
         if (response.status === 200) {
             if (response.data.toString().includes('!DOCTYPE')) {
                 console.log(`${address} нечего клеймить`)
@@ -41,6 +42,7 @@ export async function getProof(address) {
     }
     try {
         const response = await axios.get(`https://www.zksyncpepe.com/resources/proofs/${address.toLowerCase()}.json`, {headers: HEADERS});
+        await new Promise(resolve => setTimeout(resolve, 3000));
         if (response.status === 200) {
             if (response.data.toString().includes('!DOCTYPE')) {
                 console.log(`${address} - нечего клеймить`)
