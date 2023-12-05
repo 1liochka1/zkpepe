@@ -10,7 +10,7 @@
 
 * Также не забудьте установить зависимости 
 
-<pre><code> nmp i</code></pre>
+<pre><code> npm i</code></pre>
 
 * Запуск
 <pre><code> node main</code></pre>
