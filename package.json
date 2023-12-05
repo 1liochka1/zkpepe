@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "axios": "^1.6.2",
+    "csv-write-stream": "^2.0.0",
+    "ethers": "^6.9.0"
+  },
+  "name": "zkpepe",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
